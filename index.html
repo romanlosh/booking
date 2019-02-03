@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>koora</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="src/css/animate.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="src/scripts/wow.min.js"></script> -->
+</head>
+<body>
+
+<div class="start-book">start booking</div>
+
+<div id="booking">
+
+	<div id="choice-panel" class="container_of_choice">
+
+		<div id="select-panel" class="select">
+			<h5>01. select sport</h5>
+		</div>
+		<div id="sport-panel" class="select sport active">
+			<h6>sport</h6>
+			<span id="sport-select">which kind of sport</span>
+		</div>
+		<div id="date-panel" class="select date">
+			<h6>date</h6>
+			<span id="date-select">When is the big game</span>
+		</div>
+		<div id="facility-panel" class="select facility">
+			<h6>facility</h6>
+			<span id="court-select">Select court</span>
+		</div>
+		<div id="price-panel" class="select price">
+			<h6>price</h6>
+			<span id="price-select">Select all options</span>
+		</div>
+
+	</div>
+
+
+	<div id="container_sport_type" class="container_sport_type">
+		<div id="football" class="sport-type football"><p>football</p></div>
+		<div id="volleyball" class="sport-type volleyball"><p>volleyball</p></div>
+		<div id="bascketball" class="sport-type bascketball"><p>bascketball</p></div>
+		<div id="futsal" class="sport-type futsal"><p>futsal</p></div>
+		<div id="badminton" class="sport-type badminton"><p>badminton</p></div>
+	</div>
+
+	<div id="container_date" class="container_date">
+		<table>
+			<caption>october, 2019</caption>
+			<tr><th>sun</th><th>mon</th><th>tue</th><th>wed</th><th>thu</th><th>fri</th><th>sat</th></tr>
+			<tr><td>30</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+			<tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr>
+			<tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+			<tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr>
+			<tr><td>28</td><td data-days-game="Monday" class="day_game">29</td><td data-days-game="Tuesday" class="day_game">30</td><td data-days-game="Wednesday" class="day_game">31</td><td>1</td><td data-days-game="Friday" class="day_game">2</td><td data-days-game="Saturday" class="day_game">3</td></tr>
+		</table>
+	</div>
+
+	<div id="container_court" class="container_court">
+		<table>
+			<caption id="courts_title">courts</caption>
+			<tr><td>Cricket Nеt 1</td><td>Cricket Nеt 2</td><td>Cricket Nеt 3</td><td>Indoor Cricket Nеt 1</td><td>Indoor Cricket Nеt 2</td><td>Indoor Cricket Nеt 3</td><td>Indoor Cricket Nеt 4</td></tr>
+			<tr><td>Indoor Cricket Nеt 5</td><td>Indoor Cricket Nеt 6</td><td>Indoor Cricket Nеt 7</td><td data-court-number="#8" class="select_courts">Indoor Cricket Nеt 8</td><td data-court-number="#9" class="select_courts">Indoor Cricket Nеt 9</td>
+		</table>
+	</div>
+
+	<div id="container_time" class="container_time">
+		<table id="time-table">
+			<tr><td>12:00<span>250 usd</span></td><td data-price="13:00, 250 USD" class="select_time">13:00<span>250 usd</span></td><td data-price="14:00, 250 USD" class="select_time">14:00<span>250 usd</span></td><td data-price="15:00, 250 USD" class="select_time">15:00<span>250 usd</span></td><td data-price="16:00, 250 USD" class="select_time">16:00<span>250 usd</span></td></tr>
+			<tr><td data-price="17:00, 250 USD" class="select_time">17:00<span>250 usd</span></td><td>18:00<span>250 usd</span></td><td>19:00<span>250 usd</span></td><td data-price="20:00, 250 USD" class="select_time">20:00<span>250 usd</span></td><td>21:00<span>250 usd</span></td></tr>
+			<tr><td>22:00<span>250 usd</span></td><td>23:00<span>250 usd</span></td></tr>
+		</table>
+	</div>
+
+	<div id="btn-svg">
+		<div class="container-svg">
+		  <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+		    <path d="M 18 32.34 l -8.34 -8.34 -2.83 2.83 11.17 11.17 24 -24 -2.83 -2.83 z" stroke="#3da35a" fill="transparent"/>
+		  </svg>
+		</div>
+		<button>Book Now</button>
+	</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

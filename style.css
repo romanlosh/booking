@@ -1,0 +1,343 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	padding-top: 50px;
+	background: #FAFBFF;
+}
+
+.start-book {
+	display: block;
+  	cursor: pointer;
+  	width: 200px;
+	padding: 15px 5px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	background: #3da35a;
+	color: #fff;
+	font-weight: 600;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgb(56,100,38);
+	transition: all 1s;
+	margin: 0 auto !important;
+	text-align: center;
+}
+
+.start-book:hover {
+  	box-shadow: 0 0 25px rgb(56,100,38);
+}
+
+.start-book:focus {
+  	outline: none;
+}
+
+#booking {
+	display: none;
+}
+
+.container_of_choice {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 100px;
+	transition: all 0.3s ease;
+}
+
+.select {
+	width: 210px;
+	height: 70px;
+	border: 1px solid #e1e1e1;
+	cursor: pointer;
+	position: relative;
+	text-transform: uppercase;
+	opacity: 0.4;
+	transition: all 0.2s ease;
+	background: #fff;
+}
+
+.select:not(:last-of-type) {
+	border-right: none;
+}
+
+.select:first-of-type {
+	padding: 25px 0 0 20px;
+	text-transform: uppercase;
+	opacity: 1 !important;
+	font-size: 16px;
+}
+
+.select:not(:first-of-type) {
+	padding: 10px 0 0 15px;
+}
+
+.select:not(:first-of-type)::after {
+	content: '\f063';
+	font-family: 'Font Awesome\ 5 Free';
+	color: dodgerblue;
+	font-weight: 900;
+	position: absolute;
+	right: 10px;
+	bottom: 26px;
+}
+
+.select span {
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	font-size: 12px;
+	text-transform: capitalize;
+}
+
+.active {
+	opacity: 1 !important;
+}
+
+/**/
+
+.container_sport_type {
+	display: flex;
+	justify-content: center;
+	/*display: none;*/
+	
+}
+
+.sport-type {
+	background: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: capitalize;
+	width: 150px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin: 0 20px;
+	border-radius: 7px;
+	box-shadow: 0px 10px 40px -7px rgba(0,0,0,0.15);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.sport-type:hover {
+	box-shadow: 0px 12px 48px -7px rgba(0,0,0,0.3);
+	transform: scale(1.03);
+}
+
+.container_date {
+	display: none;
+}
+
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+caption {
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+th {
+	border-top: 1px solid #D9D9E4;
+	height: 40px;
+	background: #FAFBFF;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+td {
+	font-size: 14px;
+	width: 120px;
+	height: 65px;
+	border: 1px solid #D9D9E4;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	background: url('td.png')no-repeat center;
+	color: #111F51;
+}
+
+td.day_game,td.select_courts {
+	background: #FAFBFF;
+}
+
+td.day_game::before,td.select_courts::before {
+	content: '';
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: orange;
+	opacity: 0;
+	transition: opacity 0.1s ease;
+}
+
+td.day_game::after,td.select_courts::after {
+	content: '';
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #F08A0F;
+	opacity: 0;
+	transition: opacity 0.1s ease;
+}
+
+td.day_game:hover::before,td.select_courts:hover::before {
+	opacity: 0.4;
+}
+
+td.day_game:hover::after,td.select_courts:hover::after {
+	opacity: 1;
+}
+
+.container_court {
+	display: none;
+}
+
+td.select_courts {
+	background: none;
+}
+
+.container_time {
+	display: none;
+	
+}
+
+.container_time table {
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+.container_time td {
+	font-size: 16px;
+	width: 160px;
+	height: 85px;
+	border: 1px solid #D9D9E4;
+	text-align: center;
+	padding-bottom: 40px;
+	cursor: pointer;
+	position: relative;
+	background: url('td.png')no-repeat center;
+	color: #111F51;
+	border-radius: 5px;
+}
+
+.container_time td::before {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	content: '';
+	height: 1px;
+	width: 90%;
+	background: #D9D9E4;
+
+}
+
+td.select_time {
+	background: none;
+	border: 1px solid lightgreen;
+	transition: all 0.2s ease;
+}
+
+td.select_time:hover {
+	background: green;
+	border-color: green;
+	color: #fff;
+}
+
+.container_time span {
+	position: absolute;
+	left: 50%;
+	top: 75%;
+	transform: translate(-50%, -50%);
+}
+
+#btn-svg {
+	display: none;
+}
+
+.container-svg {
+	width: 120px;
+	height: 170px;
+	margin: 0 auto;
+}
+
+svg {
+  	width: 100%;
+  	height: 100%;
+}
+
+path {
+  	stroke-dasharray: 99.47578430175781;
+  	stroke-dashoffset: -99.47578430175781;
+  	fill: transparent;
+}
+
+svg.animate path {
+  	animation: 1.7s ease forwards draw;
+  	opacity:1;
+}
+
+@keyframes draw {
+  0% {
+    opacity: 1;
+    stroke-dashoffset: -99.47578430175781;
+    fill: transparent;
+    transform: translateY(0);
+  }
+  
+  35% {
+    stroke-dashoffset: 0;
+    fill: transparent;
+  }
+  
+  60% {
+    fill: #3da35a;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  100% {
+    fill: #3da35a;
+    stroke-dashoffset: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+
+button {
+	display: block;
+  	cursor: pointer;
+  	width: 200px;
+	padding: 15px 5px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	background: #3da35a;
+	border: none;
+	color: #ffffff;
+	font-weight: 600;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgb(56,100,38);
+	transition: all 1s;
+	margin: 0 auto !important;
+}
+
+button:hover {
+  	box-shadow: 0 0 25px rgb(56,100,38);
+}
+
+button:focus {
+  	outline: none;
+}
