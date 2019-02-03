@@ -65,6 +65,7 @@ jQuery(document).ready(function() {
 			$(containers_array).each(function() {
 				$(this).fadeOut(500);
 				$('#btn-svg').fadeOut(500);
+				$('#courts_title').text($('#sport-select').text()+" courts");
 				setTimeout(function() {
 					$('#container_sport_type').fadeIn();
 					$('#select-panel h5').text('01. select sport');
@@ -77,6 +78,7 @@ jQuery(document).ready(function() {
 			$(containers_array).each(function() {
 				$(this).fadeOut(500);
 				$('#btn-svg').fadeOut(500);
+				$('#courts_title').text($('#sport-select').text()+" courts");
 				setTimeout(function() {
 					$('#container_date').fadeIn();
 					$('#select-panel h5').text('02. select date');
@@ -89,6 +91,7 @@ jQuery(document).ready(function() {
 			$(containers_array).each(function() {
 				$(this).fadeOut(500);
 				$('#btn-svg').fadeOut(500);
+				$('#courts_title').text($('#sport-select').text()+" courts");
 				setTimeout(function() {
 					$('#container_court').fadeIn();
 					$('#select-panel h5').text('03. select courte');
@@ -101,6 +104,7 @@ jQuery(document).ready(function() {
 			$(containers_array).each(function() {
 				$(this).fadeOut(500);
 				$('#btn-svg').fadeOut(500);
+				$('#courts_title').text($('#sport-select').text()+" courts");
 				setTimeout(function() {
 					$('#container_time').fadeIn();
 					$('#select-panel h5').text('04. select time');
@@ -125,24 +129,6 @@ button.addEventListener('click', function(){
     }, 1700);  
   } 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
